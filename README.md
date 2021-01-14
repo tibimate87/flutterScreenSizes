@@ -2,6 +2,11 @@
 
 A new Flutter package project.
 
+Installation:
+
+  screensizes:
+    git: https://github.com/tibimate87/flutterScreenSizes.git
+
 ## Getting Started
 
 This project is a starting point for a Dart
