@@ -20,6 +20,21 @@ class ScreenSizes {
     return screenSize(context).width * dividedBy;
   }
 
+  static double smartBannerSize(BuildContext context) {
+    double margin;
+    double height = screenHeight(context);
+
+    if (height <= 400) {
+      margin = 37;
+    } else if (height > 400 && height < 720) {
+      margin = 55;
+    } else if (height >= 720) {
+      margin = 95;
+    }
+
+    return margin;
+  }
+
   static bool isAndroidTablet() {
     final data = MediaQueryData.fromWindow(WidgetsBinding.instance.window);
     return Platform.isAndroid
