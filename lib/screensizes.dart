@@ -25,11 +25,11 @@ class ScreenSizes {
     double height = screenHeight(context);
 
     if (height <= 400) {
-      margin = 37;
+      margin = 32;
     } else if (height > 400 && height < 720) {
-      margin = 55;
+      margin = 50;
     } else if (height >= 720) {
-      margin = 95;
+      margin = 90;
     }
 
     return margin;
