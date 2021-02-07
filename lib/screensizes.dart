@@ -43,4 +43,9 @@ class ScreenSizes {
             : true
         : false;
   }
+
+  static double convert(
+      BuildContext context, double origScreenWidth, double origSize) {
+    return ((screenWidth(context) * origSize) / origScreenWidth);
+  }
 }
