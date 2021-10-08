@@ -21,7 +21,7 @@ class ScreenSizes {
   }
 
   static double smartBannerSize(BuildContext context) {
-    double margin;
+    double margin = 0;
     double height = screenHeight(context);
 
     if (height <= 400) {
@@ -36,7 +36,7 @@ class ScreenSizes {
   }
 
   static bool isAndroidTablet() {
-    final data = MediaQueryData.fromWindow(WidgetsBinding.instance.window);
+    final data = MediaQueryData.fromWindow(WidgetsBinding.instance!.window);
     return Platform.isAndroid
         ? data.size.shortestSide < 600
             ? false
